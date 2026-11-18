@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#211923">
+<title>給寧寧的不可思議生日邀請函</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="petals" aria-hidden="true" id="petals"></div>
+<header class="topbar">
+  <a class="brand" href="#top">KAMOME ACADEMY <span>✦</span></a>
+  <button class="edit-toggle" id="editToggle">✎ 編輯內容</button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="moon"></div>
+    <div class="hero-inner">
+      <p class="eyebrow" data-field="eyebrow">THE SEVENTH MYSTERY · SPECIAL INVITATION</p>
+      <div class="charm">🎐</div>
+      <p class="small-kicker">一則只在今晚出現的校園傳聞</p>
+      <h1><span data-field="recipient">寧寧</span>，<br><em data-field="heroTitle">生日快樂！</em></h1>
+      <p class="hero-copy" data-field="heroCopy">聽說海鷗學園的七號今天準備了一份特別的驚喜。</p>
+      <button class="primary-btn" id="beginBtn">打開神秘邀請函 <span>→</span></button>
+      <div class="scroll-note">SCROLL TO DISCOVER <span>↓</span></div>
+    </div>
+    <div class="school-line"></div>
+  </section>
+
+  <section class="intro section" id="story">
+    <div class="section-mark">01 / THE GUEST</div>
+    <div class="intro-grid">
+      <div class="character-art" id="characterArt" role="img" aria-label="花子君主題裝飾插畫">
+        <div class="halo"></div><div class="hat">✦</div>
+        <div class="ghost-face"><span class="eye left"></span><span class="eye right"></span><span class="cheek left"></span><span class="cheek right"></span><span class="mouth"></span></div>
+        <div class="collar"></div><div class="uniform"></div>
+        <div class="floating-star s1">✧</div><div class="floating-star s2">✦</div>
+        <span class="art-caption">NO. 7</span>
+      </div>
+      <div class="intro-text">
+        <p class="eyebrow">HEY, NENE!</p>
+        <h2 data-field="greetingTitle">「喂，寧寧！<br>妳終於來啦。」</h2>
+        <p data-field="greetingText">今天可是特別的日子。平常的惡作劇先暫停一下——因為我有一份生日禮物要交給妳。</p>
+        <div class="signature">— 花子君 <span>♡</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission section">
+    <div class="section-mark">02 / BIRTHDAY MISSION</div>
+    <div class="center-heading">
+      <p class="eyebrow">A LITTLE MAGIC FOR YOU</p>
+      <h2 data-field="missionTitle">今天的生日任務</h2>
+      <p data-field="missionCopy">完成三個小小的儀式，解鎖最後的驚喜。</p>
+    </div>
+    <div class="mission-grid">
+      <article class="mission-card">
+        <span class="number">01</span><div class="card-icon">🎂</div>
+        <h3>點亮生日蛋糕</h3><p>讓三根蠟燭都亮起來。</p>
+        <button class="text-btn" id="cakeGo">前往點蠟燭 ↗</button>
+      </article>
+      <article class="mission-card">
+        <span class="number">02</span><div class="card-icon">✉️</div>
+        <h3>拆開秘密信件</h3><p>看看花子君偷偷寫了什麼。</p>
+        <button class="text-btn" id="letterGo">前往拆信 ↗</button>
+      </article>
+      <article class="mission-card">
+        <span class="number">03</span><div class="card-icon">🌸</div>
+        <h3>揭開最後彩蛋</h3><p>收下只屬於寧寧的祝福。</p>
+        <button class="text-btn" id="secretGo">前往彩蛋 ↗</button>
+      </article>
+    </div>
+  </section>
+
+  <section class="cake-section section" id="cake">
+    <div class="section-mark">03 / MAKE A WISH</div>
+    <div class="center-heading">
+      <p class="eyebrow">CLOSE YOUR EYES</p>
+      <h2 data-field="cakeTitle">許下一個願望吧</h2>
+      <p data-field="cakeCopy">依序點亮三根蠟燭，再按下吹熄按鈕。</p>
+    </div>
+    <div class="cake-stage">
+      <div class="cake-emoji" id="cakeEmoji">🎂</div>
+      <div class="candle-row" aria-label="生日蠟燭">
+        <span class="candle" data-candle="0">🕯️</span><span class="candle" data-candle="1">🕯️</span><span class="candle" data-candle="2">🕯️</span>
+      </div>
+      <p id="candleStatus" class="status">還有三根蠟燭等待點亮。</p>
+      <div class="button-row"><button class="primary-btn" id="lightBtn">✦ 點亮一根</button><button class="outline-btn" id="blowBtn">呼——吹熄蠟燭</button></div>
+      <div class="wish-message" id="wishMessage" hidden><span>✨</span><strong>願望已經出發！</strong><p data-field="wishText">願寧寧的新一歲，充滿勇氣、好運與好多好多快樂。</p></div>
+    </div>
+  </section>
+
+  <section class="letter-section section" id="letter">
+    <div class="section-mark">04 / A LETTER FROM NO. 7</div>
+    <div class="letter-wrap">
+      <div class="letter-decoration">✉</div>
+      <div class="letter-paper">
+        <p class="eyebrow">CONFIDENTIAL · ONLY FOR NINGNING</p>
+        <h2 data-field="letterTitle">給寧寧的一封信</h2>
+        <div class="letter-body" id="letterBody"></div>
+        <button class="primary-btn" id="openLetter">拆開花子君的信</button>
+        <div class="letter-content" id="letterContent" hidden>
+          <div class="letter-rule"></div>
+          <p data-field="letterP1">生日快樂，寧寧！</p>
+          <p data-field="letterP2">新的一歲，希望妳能遇見更多有趣的人、看見漂亮的風景，也能勇敢地去做自己喜歡的事情。</p>
+          <p data-field="letterP3">偶爾遇到不順利的日子也沒關係，記得給自己一點時間。妳值得被溫柔對待，也值得擁有很多美好的事物。</p>
+          <p data-field="letterP4">今天就盡情享受屬於妳的日子吧！蛋糕要吃、願望要許，還有——不可以忘記笑喔。</p>
+          <p class="letter-sign" data-field="letterSign">妳的生日幽靈・花子君 ♡</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-section section" id="secret">
+    <div class="section-mark">05 / THE LAST MYSTERY</div>
+    <div class="final-inner">
+      <div class="red-flower">✿</div>
+      <p class="eyebrow">THE FINAL SURPRISE</p>
+      <h2 data-field="finalTitle">最後一個不可思議</h2>
+      <p data-field="finalCopy">妳已經完成今天的生日任務。<br>準備好收下最後一份禮物了嗎？</p>
+      <button class="primary-btn" id="revealBtn">揭開最後的秘密 ✦</button>
+      <div class="final-gift" id="finalGift" hidden>
+        <div class="gift-sparkle">✧　🎀　✧</div>
+        <h3 data-field="finalGreeting">生日快樂，寧寧！</h3>
+        <p data-field="finalMessage">願妳的每一天，都有值得期待的小事；願妳一直保有自己的光芒，也總能遇見溫柔的人。</p>
+        <div class="gift-bottom">✦ ✧ 🎂 ✧ ✦</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><span>七大不可思議 · 特別紀念日</span><small>HAPPY BIRTHDAY, <span data-field="recipient">寧寧</span></small></footer>
+
+<aside class="editor" id="editor" aria-label="網站內容編輯器" hidden>
+  <div class="editor-head"><div><p class="eyebrow">SITE CONTENT EDITOR</p><h2>編輯生日網站</h2></div><button id="closeEditor" class="close-btn" aria-label="關閉">×</button></div>
+  <p class="editor-note">修改下方文字後按「套用預覽」。完成後可下載新版 content.js，替換網站資料檔再重新發布。</p>
+  <div id="fields" class="fields"></div>
+  <div class="editor-actions">
+    <button class="primary-btn" id="applyEdits">套用預覽</button>
+    <button class="outline-btn" id="downloadData">下載新版內容檔</button>
+    <button class="text-btn" id="resetEdits">還原預設文字</button>
+  </div>
+  <div class="editor-bottom">
+    <label class="upload-label">更換主題圖片（可選）<input type="file" id="imageUpload" accept="image/*"></label>
+    <p>圖片會以本機預覽方式顯示。若要讓所有訪客都看到，請把圖片放進網站資料夾並在 style.css 設定。</p>
+    <button class="outline-btn" id="exportAll">匯出整份網站 ZIP</button>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
